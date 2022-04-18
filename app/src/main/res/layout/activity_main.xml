@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/stopwatch_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:text="@string/sw"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/stopwatch_clock"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@id/stopwatch_logo"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="200sp"
+        android:fontFamily="sans-serif"
+        android:text="@string/nulls"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="80sp" />
+
+
+    <Button
+        android:id="@+id/stopwatch_clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/stopwatch_clock"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="150sp"
+        android:layout_marginRight="220sp"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/cl"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/stopwatch_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/stopwatch_clock"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="150sp"
+        android:layout_marginRight="30sp"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/sw_start_button"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp" />
+
+
+
+</RelativeLayout>
